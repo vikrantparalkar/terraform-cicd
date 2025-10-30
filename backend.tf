@@ -3,7 +3,7 @@ terraform {
     bucket = "my-s3-vikrant5757"
     key    = "state"
     region = "us-east-1"
-    dynamodb_table = "mera-table"
+    use_lockfile = "mera-table"
     encrypt        = true
   }
 }
