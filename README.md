@@ -47,5 +47,3 @@ It provisions and manages AWS resources with a secure **S3 remote backend** for 
 | `AWS_DEFAULT_REGION` | AWS region (e.g. us-east-1) |
 
 ---
-
-### 📁 Repository Structure
