@@ -76,7 +76,6 @@ It provisions and manages AWS resources with a secure **S3 remote backend** for 
 
 ### 🧠 Deployment Flow (Visual)
 
-```mermaid
 flowchart TD
     A[Push Code to GitHub] --> B[GitHub Actions Triggered]
     B --> C[Terraform Init & Plan]
