@@ -74,13 +74,13 @@ It provisions and manages AWS resources with a secure **S3 remote backend** for 
 
 ---
 
-### 🧠 Deployment Flow (Visual)
 
-flowchart TD
-    A[Push Code to GitHub] --> B[GitHub Actions Triggered]
-    B --> C[Terraform Init & Plan]
-    C --> D[Terraform Apply]
-    D --> E[AWS Infrastructure Created]
-    E --> F[S3 Stores State]
-    F --> G[DynamoDB Locks State]
-    G --> H[Manual Destroy Trigger (Optional)]
+## 🧠 Deployment Flow
+1. Push code to GitHub  
+2. GitHub Actions automatically triggers `terraform init`, `plan`, and `apply`  
+3. Terraform provisions AWS resources  
+4. State is stored in **S3**, locked via **DynamoDB**  
+5. You can manually trigger `terraform destroy` when needed
+
+---
+
